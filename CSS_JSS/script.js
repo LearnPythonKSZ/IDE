@@ -8,6 +8,7 @@ function Question(name){
 		document.getElementById("answer4").className="answer";
 		document.getElementById("next").className="nextunlocked";
 		document.getElementById("next").value="Nächstes Kapitel";
+		document.getElementById("buttonhref").href="/Aufbau";
 	}else{
 		switch(name){
 			case "button1":
