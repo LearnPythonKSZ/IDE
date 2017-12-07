@@ -7,3 +7,8 @@ function Question(name){
 		document.getElementById("buttonhref").href="/Aufbau";
 	}
 }
+function rightanswer2(){
+		document.getElementById("next").className="nextunlocked";
+		document.getElementById("next").value="Nächstes Kapitel";
+		document.getElementById("buttonhref").href="/Aufbau";
+}
