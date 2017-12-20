@@ -6,9 +6,9 @@ function Question(name){
 		document.getElementById("answer2").className="answer";
 		document.getElementById("answer3").className="answer";
 		document.getElementById("answer4").className="answertrue";
-		document.getElementById("next").className="nextunlocked";
-		document.getElementById("next").value="Nächstes Kapitel";
-		document.getElementById("buttonhref").href="/Aufbau";
+		number();
+		pointquestion=1;
+		pointunlock();
 	}else{
 		switch(name){
 			case "button1":
