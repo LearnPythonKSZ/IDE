@@ -3,7 +3,7 @@ var pointgap = 0;
 var pointanswerfunction = 0;
 var pointsimagemap=0;
 var pointquestion=0;
-var pointsneeded=1;
+var pointsneeded=2;
 var differenz= pointsneeded-points;
 function number(){
 	document.getElementById("point").innerHTML= points;
