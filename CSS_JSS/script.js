@@ -22,7 +22,7 @@ function pointunlock() {
 	if (points >= pointsneeded){
 		document.getElementById("next").className="nextunlocked";
 		document.getElementById("next").value="Nächstes Kapitel";
-		document.getElementByID("next").href="/Erste_Schritte/"
+		document.getElementByID("buttonhref").href="/Erste_Schritte/"
 	}
 }
 function Question(name){
