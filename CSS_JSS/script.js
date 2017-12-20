@@ -1,6 +1,7 @@
 var points=0;
 var pointgap = 0;
 var pointanswerfunction = 0;
+var pointsimagemap=0;
 var pointquestion=0;
 var pointsneeded=1;
 var differenz= pointsneeded-points;
@@ -15,12 +16,13 @@ function number(){
 	}
 }
 function pointunlock() {
-	points = pointgap + pointanswerfunction + pointquestion;
+	points = pointgap + pointanswerfunction + pointquestion + pointsimagemap;
 	differenz= pointsneeded-points;
 	number();
 	if (points >= pointsneeded){
 		document.getElementById("next").className="nextunlocked";
 		document.getElementById("next").value="Nächstes Kapitel";
+		document.getElementByID("next").href="/Erste_Schritte/"
 	}
 }
 function Question(name){
@@ -67,9 +69,7 @@ function gap() {
 		pointunlock();
 	}
 }
-function rightanswer2(){
-		document.getElementById("next").className="nextunlocked";
-		document.getElementById("next").value="Nächstes Kapitel";
-		document.getElementById("buttonhref").href="/Aufbau";
+function imagemapsolved(){
+	pointsimagemap=1;
+	pointunlock();
 }
-
