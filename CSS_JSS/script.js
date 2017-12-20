@@ -67,3 +67,9 @@ function gap() {
 		pointunlock();
 	}
 }
+function rightanswer2(){
+		document.getElementById("next").className="nextunlocked";
+		document.getElementById("next").value="Nächstes Kapitel";
+		document.getElementById("buttonhref").href="/Aufbau";
+}
+
