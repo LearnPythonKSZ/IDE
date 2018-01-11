@@ -5,6 +5,10 @@ var pointsimagemap=0;
 var pointquestion=0;
 var pointsneeded=2;
 var differenz= pointsneeded-points;
+function help1(idtext,idbutton){
+	idbutton.style.display ="none";
+	idtext.style.display = "block";
+}
 function number(){
 	document.getElementById("point").innerHTML= points;
 	if(pointsneeded-points>0){
