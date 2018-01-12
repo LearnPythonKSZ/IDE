@@ -15,7 +15,7 @@ body {
 	font-size: 12px;
 }
 .textmarked {
-	background-color: (255,255,0,0.6);
+	background-color: yellow;
 }
 .helpbutton:hover{
  background-color: #3478e5;
