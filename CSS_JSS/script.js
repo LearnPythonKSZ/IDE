@@ -23,7 +23,6 @@ function help(idtext,idbutton,scroll){
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
 	document.getElementById(ids).className="textmarked";
-	alert(document.getElementById(ids).className);
 	location.href = "#scrollto"
 	} else {
     alert("debug neither");
