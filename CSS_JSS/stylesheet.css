@@ -16,11 +16,6 @@ body {
 }
 .textmarked {
 	background-color: #3478e5;
-	text-align: left;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-left: 370px;
-	padding-right: 370px;
 }
 .helpbutton:hover{
  background-color: #3478e5;
