@@ -22,7 +22,7 @@ function help(idtext,idbutton,scroll){
 	idtext.style.display = "block";
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
-	var scrollpoint=document.getElementById(scroll);
+	var scrollpoint = document.getElementById(scrollto);
 	document.getElementById(ids).className="textmarked";
 	scrollpoint.scrollIntoView();
 	} else {
