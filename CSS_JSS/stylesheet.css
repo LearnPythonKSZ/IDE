@@ -8,10 +8,12 @@ body {
 	display: inline-block; 
 	color: #3478e5;
 	background-color: white;
-	border: 3px solid #3478e5;
 	font-size: 125%;
 	height: 35px;
 	width: 3%;
+	border: solid 2px #3478e5;
+	background-color: transparent;
+	font-size: 12px;
 }
 ::-webkit-scrollbar {
     height: 5px;
