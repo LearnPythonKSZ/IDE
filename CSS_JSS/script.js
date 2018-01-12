@@ -23,7 +23,7 @@ function help(idtext,idbutton,scroll){
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
 	document.getElementById(ids).className="textmarked";
-	window.location = "#scroll";
+	window.location = "https://learnpythonksz.github.io/IDE/#scrollto"
 	} else {
     alert("debug neither");
 	}
