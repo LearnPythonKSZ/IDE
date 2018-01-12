@@ -15,16 +15,16 @@ function number(){
 		document.getElementById("unlocked").innerHTML="Du hast das nächste Kapitel freigeschaltet";
 	}
 }
-function help(idtext,idbutton){
+function help(idtext,idbutton,scroll){
 	var idh = idbutton.getAttribute("id");
 	if (idh == "helpbutton1") {
 	idbutton.style.display = "none" ;
 	idtext.style.display = "block";
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
-	var texttobemarked = document.getElementById(ids);
+	var scrollpoint=document.getElementById(scroll);
 	document.getElementById(ids).className="textmarked";
-	texttobemarked.scrollIntoView();
+	scrollpoint.scrollIntoView();
 	} else {
     alert("debug neither");
 	}
