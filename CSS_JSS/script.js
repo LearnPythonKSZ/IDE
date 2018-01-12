@@ -5,10 +5,6 @@ var pointsimagemap=0;
 var pointquestion=0;
 var pointsneeded=2;
 var differenz= pointsneeded-points;
-function help1(idtext,idbutton){
-	idbutton.style.display ="none";
-	idtext.style.display = "block";
-}
 function number(){
 	document.getElementById("point").innerHTML= points;
 	if(pointsneeded-points>0){
@@ -17,6 +13,21 @@ function number(){
 	}
 	else{
 		document.getElementById("unlocked").innerHTML="Du hast das nächste Kapitel freigeschaltet";
+	}
+}
+function help(idtext,idbutton){
+	var idh =idbutton.getAttribute("id");
+	alert(idh);
+	if (idh=="helpbutton1") {
+	idbutton.style.display ="none";
+	idtext.style.display = "block";
+	} else if (idh=="helpbutton2") {
+	var ids=idtext.getAttribute("id");
+	var texttobemarked = document.getElementById(ids);
+	document.getElementById(ids).className="textmarked";
+	texttobemarked.scrollIntoView();
+	} else {
+    alert("debug neither");
 	}
 }
 function pointunlock() {
