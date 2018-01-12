@@ -8,17 +8,16 @@ body {
 	display: inline-block; 
 	color: #3478e5;
 	background-color: white;
-	font-size: 125%;
-	height: 35px;
-	width: 5%;
+	width: 200px;
+	height: 50px;
 	border: solid 2px #3478e5;
 	background-color: transparent;
 	font-size: 12px;
 }
 .helpbutton:hover{
-background-color: #3478e5;
-color: white;
-}
+ background-color: #3478e5;
+ color: white;
+ }
 ::-webkit-scrollbar {
     height: 5px;
     width: 5px;
