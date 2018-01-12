@@ -17,7 +17,6 @@ function number(){
 }
 function help(idtext,idbutton){
 	var idh =idbutton.getAttribute("id");
-	alert(idh);
 	if (idh=="helpbutton1") {
 	idbutton.style.display ="none";
 	idtext.style.display = "block";
