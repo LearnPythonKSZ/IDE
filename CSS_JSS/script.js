@@ -22,9 +22,8 @@ function help(idtext,idbutton){
 	idtext.style.display = "block";
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
-	var texttobemarked = document.getElementById(ids);
 	document.getElementById(ids).className="textmarked";
-	texttobemarked.scrollIntoView(true);
+	document.getElementById(ids).scrollIntoView();
 	} else {
     alert("debug neither");
 	}
