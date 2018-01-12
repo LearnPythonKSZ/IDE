@@ -23,7 +23,7 @@ function help(idtext,idbutton){
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
 	document.getElementById(ids).className="textmarked";
-	document.getElementById(ids).focus();
+	document.getElementById(ids).scrollIntoView(true);
 	} else {
     alert("debug neither");
 	}
