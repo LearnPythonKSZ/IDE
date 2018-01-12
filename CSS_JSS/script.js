@@ -22,11 +22,9 @@ function help(idtext,idbutton,scroll){
 	idtext.style.display = "block";
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
-	alert (ids);
 	document.getElementById(ids).className="textmarked";
 	alert(document.getElementById(ids).className);
 	location.href = "#scrollto"
-	alert("doneredirect")
 	} else {
     alert("debug neither");
 	}
