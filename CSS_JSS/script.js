@@ -25,7 +25,7 @@ function help(idtext,idbutton,scroll){
 	alert (ids);
 	document.getElementById(ids).className="textmarked";
 	alert(document.getElementById(ids).className);
-	window.location = "https://learnpythonksz.github.io/IDE/#scrollto"
+	location.href = "#scrollto"
 	alert("doneredirect")
 	} else {
     alert("debug neither");
