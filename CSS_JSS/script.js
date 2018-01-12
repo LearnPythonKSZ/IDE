@@ -16,15 +16,15 @@ function number(){
 	}
 }
 function help(idtext,idbutton){
-	var idh =idbutton.getAttribute("id");
-	if (idh=="helpbutton1") {
-	idbutton.style.display ="none";
+	var idh = idbutton.getAttribute("id");
+	if (idh == "helpbutton1") {
+	idbutton.style.display = "none" ;
 	idtext.style.display = "block";
 	} else if (idh=="helpbutton2") {
 	var ids=idtext.getAttribute("id");
 	var texttobemarked = document.getElementById(ids);
 	document.getElementById(ids).className="textmarked";
-	texttobemarked.scrollIntoView();
+	texttobemarked.scrollIntoView(true);
 	} else {
     alert("debug neither");
 	}
