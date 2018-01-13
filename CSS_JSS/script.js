@@ -21,6 +21,7 @@ function help(idtext,idbutton,scroll){
 	idbutton.style.display = "none" ;
 	idtext.style.display = "block";
 	} else if (idh=="helpbutton2") {
+	idbutton.style.display = "none" ;
 	var ids=idtext.getAttribute("id");
 	document.getElementById(ids).className="textmarked";
 	location.href = "#scrollto"
