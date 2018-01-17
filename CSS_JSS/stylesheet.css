@@ -4,7 +4,23 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+.helpbutton{
+	display: inline-block; 
+	color: #3478e5;
+	background-color: white;
+	width: 200px;
+	height: 50px;
+	border: solid 2px #3478e5;
+	background-color: transparent;
+	font-size: 12px;
+}
+.textmarked {
+	background-color: (255,255,0,0.6);
+}
+.helpbutton:hover{
+ background-color: #3478e5;
+ color: white;
+ }
 ::-webkit-scrollbar {
     height: 5px;
     width: 5px;
@@ -14,6 +30,35 @@ body {
 .red {
 	color: red;
 	background-color: white;
+}
+.video{
+	width: 1920px;
+	top: 23px;
+	height: 500px;
+	position: absolute;
+	z-index: 0;
+}
+.image{
+	position: relative;
+	margin-top: 270px;
+	bottom: -3px;
+}
+.imagecontainer{
+	margin-left: calc(50% - 200px);
+}
+.Background{
+	position: absolute;
+}
+.overlay{
+	font-family: Bookman, serif;
+	font-size: 300%;
+	position: absolute;
+	text-align:center;
+	z-index: 1;
+	width: 100%;
+	margin-top: 200px; 
+	height: 100px;
+	color: black;
 }
 .green {
 	color: green;
@@ -38,7 +83,6 @@ body {
 }
 .linkselected {
 	text-decoration: none;
-	color: blue;
 	color: yellow;
 	display: inline-block;
 	margin-top: 14px;
@@ -46,16 +90,31 @@ body {
 	margin-right: 20px;
 	font-family: 'Lato', sans-serif;
 }
-.glossar{
-	float: right;
-	font-size:120%;
-	margin-right: 10px;	
+.hilfetext{
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 370px;
+	padding-right: 370px;
+	display: none;
 }
-.glossarselected{
+.textpoint{
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 370px;
+	padding-right: 370px;
+}
+.linkglossarselected {
 	color: blue;
-	float: right;
-	font-size:120%;
-	margin-right: 10px;	
+	text-decoration:none;
+	display: inline-block;
+	margin-top: 14px;
+	margin-left: 10px;
+	margin-right: 20px;
+	opacity: 1;
+	font-size: 80%;
+	font-family: 'Lato', sans-serif;
 }
 .linkselected::selection{
 	color: blue;
@@ -71,10 +130,16 @@ div.navigation{
 	background-color: black;
 	color: white;
 	border: solid 1px black;
+	z-index: 5;
 }
 .navbar{
 	float:left;
 	width: 75%;
+}
+.glossar{
+	float: right;
+	font-size:120%;
+	margin-right: 10px;	
 }
 .searchbar {
 	position: absolute;
@@ -171,17 +236,6 @@ input[type="text"]:focus{
 	font-size: 80%;
 	font-family: 'Lato', sans-serif;
 }
-.linkglossarselected{
-	color: blue;
-	text-decoration:none;
-	display: inline-block;
-	margin-top: 14px;
-	margin-left: 10px;
-	margin-right: 20px;
-	opacity: 1;
-	font-size: 80%;
-	font-family: 'Lato', sans-serif;
-}
 .linkglossar:hover {
 	opacity: 0.8;
 }
@@ -212,6 +266,11 @@ div.heading {
 	text-decoration: line-through;
 	color: red;
 }
+.answertrue{
+	color: green;
+	text-decoration:none;
+	font-size: 100%;
+}
 .text {
 	text-align: left;
 	margin-left: 20px;
@@ -219,22 +278,8 @@ div.heading {
 	padding-left: 370px;
 	padding-right: 370px;
 }
-.Glossarerklärung{
-	text-align: left;
-	display: inline-block;
-	margin-left: 5%;
-	margin-right: 5%
-}
 .Begriffserklärungen{
 	margin-bottom: 75px;
-}
-.Glossarlinks{
-	text-align: left;
-	display: inline-block;
-}
-.Glossarbegriffe{
-	text-align: left;
-	margin-Left: 5%;
 }
 .Begriffe {
 	text-align: left;
@@ -293,6 +338,8 @@ div.heading {
 	height: 150px;
 	display: block;
 	text-align:center;
+	margin-bottom:0 px;
+	z-index: 3;
 }
 .end span{
 	position: absolute;
