@@ -43,8 +43,7 @@ function help(idtext,idbutton,scroll){
 	idtext.style.display = "block";
 	} else if (idh=="helpbutton2") {
 	idbutton.style.display = "none" ;
-	var highlighttext = document.getElementById(idtext);
-	highlighttext.style.backgroundColor = "yellow";
+	idtext.style.backgroundColor = "yellow";
 	location.href = "#scrollto"
 	} else {
     alert("an error occured pls contact system admin #1");
