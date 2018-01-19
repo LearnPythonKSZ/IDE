@@ -44,7 +44,7 @@ function help(idtext,idbutton,scroll){
 	} else if (idh=="helpbutton2") {
 	idbutton.style.display = "none" ;
 	var highlighttext = document.getElementById(idtext);
-	highlighttext[0].style.backgroundColor = "yellow";
+	highlighttext.style.backgroundColor = "yellow";
 	location.href = "#scrollto"
 	} else {
     alert("an error occured pls contact system admin #1");
