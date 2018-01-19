@@ -21,7 +21,7 @@ function solution(idbutton){
 		var solutionbutton=document.getElementById("solutionbutton1");
 		var solutionspan=document.getElementById("solution1");
 		solutionbutton.style.width = "800px";
-		solutionbutton.style.height = "400px";
+		solutionbutton.style.height = "100px";
 		solutionbutton.style.left="calc(50% - 400px)";
 		solutiontag.style.display="none";
 		solutionspan.style.display="inline";
@@ -30,7 +30,7 @@ function solution(idbutton){
 		var solutionbutton=document.getElementById("solutionbutton2");
 		var solutionspan=document.getElementById("solution2");
 		solutionbutton.style.width = "800px";
-		solutionbutton.style.height = "400px";
+		solutionbutton.style.height = "100px";
 		solutionbutton.style.left="calc(50% - 400px)";
 		solutiontag.style.display="none !important";
 		solutionspan.style.display="inline";
