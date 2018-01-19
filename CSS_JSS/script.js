@@ -32,7 +32,7 @@ function solution(idbutton){
 		solutionbutton.style.width = "800px";
 		solutionbutton.style.height = "400px";
 		solutionbutton.style.left="calc(50% - 400px)";
-		solutiontag.style.display="none";
+		solutiontag.style.display="none !important";
 		solutionspan.style.display="inline";
 	}
 }
