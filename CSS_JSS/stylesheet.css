@@ -28,6 +28,10 @@ body {
 	background-color: transparent;
 	font-size: 12px;
 }
+.solutionbutton:hover:focus{
+background-color: white;
+color: black;
+}
 .solutionbutton:not(:focus):hover{
  background-color: black;
  color: white;
