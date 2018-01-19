@@ -45,7 +45,6 @@ function help(idtext,idbutton,scroll){
 	idbutton.style.display = "none" ;
 	var highlighttext = document.getElementsById(idtext);
 	highlighttext[0].style.backgroundColor = "yellow";
-	/*idtext.style.backgroundColor="(255,255,0,0.6)";
 	location.href = "#scrollto"
 	} else {
     alert("an error occured pls contact system admin #1");
