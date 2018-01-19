@@ -44,10 +44,10 @@ function help(idtext,idbutton,scroll){
 	} else if (idh=="helpbutton2") {
 	idbutton.style.display = "none" ;
 	var ids=idtext.getAttribute("id");
-	document.getElementById(ids).className="textmarked";
+	document.getElementById(ids).style.background-color="(255,255,0,0.6)";
 	location.href = "#scrollto"
 	} else {
-    alert("debug neither");
+    alert("an error occured pls contact system admin #1");
 	}
 }
 function pointunlock() {
