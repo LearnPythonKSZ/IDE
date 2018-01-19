@@ -28,7 +28,7 @@ body {
 	background-color: transparent;
 	font-size: 12px;
 }
-.solutionbutton:hover{
+.solutionbutton:not(:focus):hover{
  background-color: black;
  color: white;
  }
