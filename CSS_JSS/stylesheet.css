@@ -36,10 +36,6 @@ color: black;
  background-color: black;
  color: white;
  }
- 
-.textmarked {
-	background-color: (255,255,0,0.6);
-}
 .helpbutton:hover{
  background-color: #3478e5;
  color: white;
