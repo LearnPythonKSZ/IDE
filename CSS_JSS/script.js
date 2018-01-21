@@ -47,9 +47,7 @@ function solution(idbutton){
 	}
  }
  function help(idtext,idbutton,scroll){
-	var idButtonElement = document.getElementById("idbutton");
-	window.alert(idButtonElement);
-	var idh = idButtonElement.getAttribute("id");
+	idbutton.getAttribute("id");
 	window.alert(idh);
  	if (idh == "helpbutton1") {
  	idbutton.style.display = "none" ;
