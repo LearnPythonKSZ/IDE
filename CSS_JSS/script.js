@@ -2,7 +2,8 @@ var points=0;
 var pointgap = 0;
 var pointanswerfunction = 0;
 var pointsimagemap=0;
-var pointquestion=0;
+var pointquestion1=0;
+var pointquestion2=0;
 var pointsneeded=2;
 var differenz= pointsneeded-points;
 function number(){
@@ -15,51 +16,17 @@ function number(){
 		document.getElementById("unlocked").innerHTML="Du hast das nächste Kapitel freigeschaltet";
 	}
 }
-function solution(idbutton){
-	if (idbutton.getAttribute("id")=="solutionbutton1"){
-		var solutiontag=document.getElementById("solutiontag1");
-		var solutionbutton=document.getElementById("solutionbutton1");
-		var solutionspan=document.getElementById("solution1");
-		solutionbutton.style.width = "800px";
-		solutionbutton.style.height = "100px";
-		solutionbutton.style.left="calc(50% - 400px)";
-		solutiontag.style.display="none";
-		solutionspan.style.display="inline";
-	}else if(idbutton.getAttribute("id")=="solutionbutton2"){
-		var solutiontag=document.getElementById("solutiontag2");
-		var solutionbutton=document.getElementById("solutionbutton2");
-		var solutionspan=document.getElementById("solution2");
-		solutionbutton.style.width = "800px";
-		solutionbutton.style.height = "100px";
-		solutionbutton.style.left="calc(50% - 400px)";
-		solutiontag.style.display="none";
-		solutionspan.style.display="inline";
-	}
-}
-function help(idtext,idbutton,scroll){
-	var idh = idbutton.getAttribute("id");
-	if (idh == "helpbutton1") {
-	idbutton.style.display = "none" ;
-	idtext.style.display = "block";
-	} else if (idh=="helpbutton2") {
-	idbutton.style.display = "none" ;
-	idtext.style.backgroundColor = "yellow";
-	location.href = "#scrollto"
-	} else {
-    alert("an error occured pls contact system admin #1");
-	}
-}
 function pointunlock() {
-	points = pointgap + pointanswerfunction + pointquestion + pointsimagemap;
+	points = pointgap + pointanswerfunction + pointquestion1 + pointquestion2  + pointsimagemap;
 	differenz= pointsneeded-points;
 	number();
 	if (points >= pointsneeded){
 		document.getElementById("next").className="nextunlocked";
 		document.getElementById("next").value="Nächstes Kapitel";
-		document.getElementById("buttonhref").href="/Erste_Schritte"
+		document.getElementById("buttonhref").href="/IDE"
 	}
 }
-function Question(name){
+function Question1(name){
 	var elements = document.getElementsByName(name);
 	var bool = elements[0].getAttribute( 'id' );
 	if (bool=="true"){
@@ -68,7 +35,7 @@ function Question(name){
 		document.getElementById("answer3").className="answer";
 		document.getElementById("answer4").className="answertrue";
 		number();
-		pointquestion=1;
+		pointquestion1=1;
 		pointunlock();
 	}else{
 		switch(name){
@@ -87,9 +54,38 @@ function Question(name){
 		}
 	}
 }
+
+function Question2(name){
+	var elements = document.getElementsByName(name);
+	var bool = elements[0].getAttribute( 'id' );
+	if (bool=="true"){
+		document.getElementById("answer5").className="answer";
+		document.getElementById("answer6").className="answertrue";
+		document.getElementById("answer7").className="answer";
+		document.getElementById("answer8").className="answer";
+		number();
+		pointquestion2=1;
+		pointunlock();
+	}else{
+		switch(name){
+			case "button5":
+				document.getElementById("answer5").className="answercrossed";
+				break;
+			case "button6":
+				document.getElementById("answer6").className="answercrossed";
+				break;
+			case "button7":
+				document.getElementById("answer7").className="answercrossed";
+				break;
+			case "button8":
+				document.getElementById("answer8").className="answercrossed";
+				break;
+		}
+	}
+}
 function answerfunction() {
     var answer=document.getElementById("answercheck").value;
-	if (answer=="false"||answer=="False"){
+	if (answer=="2.0"||answer=="2,0"){
 		pointanswerfunction = 1;
 		pointunlock();
 
