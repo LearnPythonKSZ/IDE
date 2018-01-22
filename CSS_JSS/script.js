@@ -69,7 +69,7 @@ function pointunlock() {
 	if (points >= pointsneeded){
 		document.getElementById("next").className="nextunlocked";
 		document.getElementById("next").value="Nächstes Kapitel";
-		document.getElementById("buttonhref").href="/IDE"
+		document.getElementById("buttonhref").href="/Erste_Schritte/"
 	}
 }
 function Question1(name){
