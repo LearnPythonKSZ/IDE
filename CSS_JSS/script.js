@@ -146,6 +146,10 @@ function gap() {
 	}
 }
 function imagemapsolved(){
+	document.getElementById("imagecontainer").style.border = "solid 3px green";
 	pointsimagemap=1;
 	pointunlock();
+}
+function imagemapwrong(){
+	document.getElementById("imagecontainer").style.border = "solid 3px red";
 }
