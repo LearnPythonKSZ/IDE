@@ -6,11 +6,11 @@ var pointquestion1=0;
 var pointquestion2=0;
 var pointsneeded=2;
 var differenz= pointsneeded-points;
-document.getElementById("pointimagemap").innerHTML= pointsimagemap;
-document.getElementById("pointquestion1").innerHTML= pointquestion1;
-document.getElementById("pointquestion2").innerHTML= pointquestion2;
 function number(){
 	document.getElementById("point").innerHTML= points;
+	document.getElementById("pointimagemap").innerHTML= pointsimagemap;
+	document.getElementById("pointquestion1").innerHTML= pointquestion1;
+	document.getElementById("pointquestion2").innerHTML= pointquestion2;
 	if(pointsneeded-points>0){
 		differenz= pointsneeded-points;
 		document.getElementById("diff").innerHTML=differenz;
