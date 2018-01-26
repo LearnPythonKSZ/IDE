@@ -45,18 +45,18 @@
 	<div class="achtung">
 	<p>Die wichtigsten Begriffe werden am <a href="#Begriffserklärungen">Seitenende</a> und Im <a href="/Glossar">Glossar</a> erklärt.</p>
 	</div>
-	</br>
+	<br>
 	<div class="text">
 		<p>Ein Editor ist, wie der Name schon impliziert, eine Anwendung in welcher man (Quell-)Texte bearbeiten kann. Ein Compiler bzw. Interpreter übersetzt den von uns geschriebenen Programmtext in Maschinensprache, da der Computer nur mit Maschinensprache arbeiten kann. Der einzig grosse Unterschied zwischen einem Compiler und einem Interpreter ist, dass der Compiler den ganzen Programmtext auf einmal übersetzt, während der Interpreter den Programmtext Stück für Stück in Maschinencode übersetzt. Der Linker verbindet die einzelnen Programmmodule zu einem lauffähigen Programm. Die Aufgabe des Debuggers ist es Fehler im Programmcode zu erkennen und sie dem Benutzer mitzuteilen. Bei manchen <a  href=#ide><span style="color:blue">Entwicklungsumgebungen</span></a> zeigt es die Fehler, oft farbig markiert, direkt im <a  href=#quellcode><span style="color:blue">Quellcode</span></a> auf. Das Graphical User Interface (GUI) ist lediglich eine grafische Oberfläche, welche das Arbeiten mit dem Programm erleichtert. Dies erreicht das GUI mithilfe von verschiedenen Leisten, Knöpfen oder anderen Steuerelementen.  </p>
 	</div>
-	</br></br></br>
+	<br><br><br>
 		<div class="übertitel">
 		<h3>Die empfehlenswerteste Python Entwicklungsumgebung</h3>
 	</div>
 	<div class="text" id="scrollto">
 		<p>Es gibt viele verschiedene <a  href=#ide><span style="color:blue">Entwicklungsumgebungen (IDEs)</span></a>. Welche man Schlussendlich benutzt ist Geschmackssache, denn es gibt keine "beste" <a  href=#ide><span style="color:blue">IDE</span></a>. Für Anfänger ist die offiziell Python <a  href=#ide><span style="color:blue">IDE</span></a> zu empfehlen. Sie hat viele Funktionen, welcher der Übersichtlichkeit des Quelltextes helfen. Dies ist, besonders für einen Anfänger, sicherlich nicht verkehrt. Zum Beispiel färbt die IDLE die verschiedenen Befehle mit verschiedenen Farben ein. Man kann die offizielle Python IDE <a href="https://www.python.org/downloads/" target="_blank" style="color:ffcc66;">hier</a> herunterladen. </p>
 	</div>
-		</br></br></br>
+		<br><br><br>
 		<div class="übertitel">
 		<h3>Erste Schritte mit der Python-IDLE</h3>
 	</div>
@@ -67,12 +67,12 @@
 	<p>Wo liegt der Unterschied zwischen der Shell und dem normalen Editor? (<span id="pointquestion1"></span>/1P.)</p>
 	<button id="helpbutton2" value="scrollto" class="helpbutton" onclick="help(shell,helpbutton2,scrollto)">?</button>
 	</div>
-	</br>
+	<br>
 	<div id="question1" value="unsolved" class="answers">
-	<input class="buttons" type="button" name="button1" value="" id="false" onclick="Question1('button1')"><label class="answer" id="answer1">Die Shell ist der übergreifende Begriff(die Schale) der .s und damit auch des Editors.</label></br></br>
-	<input class="buttons" type="button" name="button2" value="" id="false" onclick="Question1('button2')"><label class="answer" id="answer2">Man kann beim Editor seine Arbeit nicht speichern</label></br></br>
-	<input class="buttons" type="button" name="button3" value="" id="false" onclick="Question1('button3')"><label class="answer" id="answer3">Im gegensatz zum Editor kommt bei der Shell ein Interpreter zum Einsatz.</label></br></br>
-	<input class="buttons" type="button" name="button4" value="" id="true" onclick="Question1('button4')"><label class="answer" id="answer4">Man kann bei der Shell nur eine Linie/Befehl auf einmal eingeben.</label> </br></br>	
+	<input class="buttons" type="button" name="button1" value="" id="false" onclick="Question1('button1')"><label class="answer" id="answer1">Die Shell ist der übergreifende Begriff(die Schale) der .s und damit auch des Editors.</label><br><br>
+	<input class="buttons" type="button" name="button2" value="" id="false" onclick="Question1('button2')"><label class="answer" id="answer2">Man kann beim Editor seine Arbeit nicht speichern</label><br><br>
+	<input class="buttons" type="button" name="button3" value="" id="false" onclick="Question1('button3')"><label class="answer" id="answer3">Im gegensatz zum Editor kommt bei der Shell ein Interpreter zum Einsatz.</label><br><br>
+	<input class="buttons" type="button" name="button4" value="" id="true" onclick="Question1('button4')"><label class="answer" id="answer4">Man kann bei der Shell nur eine Linie/Befehl auf einmal eingeben.</label> <br><br>	
 	</div>
 	<button id="solutionbutton1"  class="solutionbutton" onclick="solution(solutionbutton1)"><span id="solutiontag1">Lösung anzeigen</span><span id="solution1" class="solution">Die letzte Aussage ist wahr. Es sollte klar aus dem letzten Abschnitt hervorgehen.</span></button>
 	<div class="question">
@@ -81,10 +81,10 @@
 	</div> 
 	<p id="helpbuttontext2" class="hilfetext" style="display:none" >Lese die Aussagen genau durch und überlege dir genau, ob dieses Wort in diesem Zusammenhang Sinn macht.</p>
 	<div class="answers2">
-	<input class="buttons" type="button" name="button5" value="" id="false" onclick="Question2('button5')"><label class="answer" id="answer5"> Eine IDE besteht aus verschiedenen Werkzeugen wie Sourcecode, Debugger und Compiler.</label></br></br>
-	<input class="buttons" type="button" name="button6" value="" id="true" onclick="Question2('button6')"><label class="answer" id="answer6"> Das GUI ist ein Bestandteil der offiziellen Python-IDLE.</label></br></br>
-	<input class="buttons" type="button" name="button7" value="" id="false" onclick="Question2('button7')"><label class="answer" id="answer7"> Die offizielle Python IDE, wurde von Microsoft entwickelt und ist deshalb bereits auf Windows vorinstalliert.</label></br></br>
-	<input class="buttons" type="button" name="button8" value="" id="false" onclick="Question2('button8')"><label class="answer" id="answer8"> Für Anfänger ist die IDE zu empfehlen, die Personen mit fortgeschrittenem Wissen sollten die IDLE wählen, da sie viel mehr Möglichkeiten bietet.</label> </br></br>	
+	<input class="buttons" type="button" name="button5" value="" id="false" onclick="Question2('button5')"><label class="answer" id="answer5"> Eine IDE besteht aus verschiedenen Werkzeugen wie Sourcecode, Debugger und Compiler.</label><br><br>
+	<input class="buttons" type="button" name="button6" value="" id="true" onclick="Question2('button6')"><label class="answer" id="answer6"> Das GUI ist ein Bestandteil der offiziellen Python-IDLE.</label><br><br>
+	<input class="buttons" type="button" name="button7" value="" id="false" onclick="Question2('button7')"><label class="answer" id="answer7"> Die offizielle Python IDE, wurde von Microsoft entwickelt und ist deshalb bereits auf Windows vorinstalliert.</label><br><br>
+	<input class="buttons" type="button" name="button8" value="" id="false" onclick="Question2('button8')"><label class="answer" id="answer8"> Für Anfänger ist die IDE zu empfehlen, die Personen mit fortgeschrittenem Wissen sollten die IDLE wählen, da sie viel mehr Möglichkeiten bietet.</label> <br><br>	
 	</div>
 	<button id="solutionbutton3"  class="solutionbutton" onclick="solution(solutionbutton3)"><span id="solutiontag3">Lösung anzeigen</span><span id="solution3" class="solution">Die erste Aussage ist falsch, da der Sourcecode nichts mit einer IDE zu tun hat. Ausserdem ist die zweitletzte Aussage falsch, da die Python IDE nicht auf Windows vorinstalliert ist (sonst müsste man es wohl kaum herunterladen). Ausserdem ist die Python IDLE eine DIE (Integrated Development Environment)</span></button>
 <div class="question" id="question">
@@ -97,7 +97,7 @@
 	<div class="imagecontainer" id="imagecontainer">
 	<img src="Bilder/idle.png" usemap="#IDEmap">
 	</div>
-	</br>
+	<br>
 <map name ="IDEmap">
     <area coords="0,21,36,44" shape="rect" onclick="imagemapsolved()">
     <area coords="36,20,400,43" shape="rect" onclick="imagemapwrong()">
@@ -108,7 +108,7 @@
 	<br>
 	<br>
 	<p class="textpoint">Du hast momentan:&nbsp;<span id="point"></span>&nbsp;Punkte
-	</br>
+	<br>
 	<span id="unlocked">Du braucht noch <span id="diff"></span>&nbsp;Punkt(e) um das nächste Kapitel freizuschalten.</span></p>
 	<a href="#question" id="buttonhref">
 	<input class="nextlocked" type="button" id="next" value="Aufgabe noch nicht richtig gelöst.">
