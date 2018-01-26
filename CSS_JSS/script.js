@@ -82,6 +82,7 @@ function Question1(name){
 		document.getElementById("answer4").className="answertrue";
 		number();
 		pointquestion1=1;
+		document.getElementById("pointquestion1").innerHTML= pointquestion1;
 		pointunlock();
 	}else{
 		switch(name){
@@ -111,6 +112,7 @@ function Question2(name){
 		document.getElementById("answer8").className="answer";
 		number();
 		pointquestion2=1;
+		document.getElementById("pointquestion2").innerHTML= pointquestion2;
 		pointunlock();
 	}else{
 		switch(name){
@@ -148,6 +150,7 @@ function gap() {
 function imagemapsolved(){
 	document.getElementById("imagecontainer").style.border = "solid 3px green";
 	pointsimagemap=1;
+	document.getElementById("pointimagemap").innerHTML= pointsimagemap;
 	pointunlock();
 }
 function imagemapwrong(){
