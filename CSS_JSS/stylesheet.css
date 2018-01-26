@@ -67,7 +67,7 @@ color: black;
 	margin-right: calc(50% - 200px);
 	padding: 10px;
 	overflow: hidden;
-	border: solid 2px black;
+	border: solid 3px black;
 }
 .Background{
 	position: absolute;
